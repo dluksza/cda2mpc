@@ -49,7 +49,7 @@ elif queryStatus is 200 or queryStatus is 210:
 			(readStatus, elementInfo) = CDDB.read(element['category'], element['disc_id'], user = 'anonymous', host = 'localhost', client_name = 'CDDB-py', client_version = '5')
 			print "\t", count, ")", element['title'], elementInfo['DYEAR'];
 			count += 1;
-		chosen = raw_input('Yout choose: ')
+		chosen = raw_input('Your choose: ')
 		queryInfo = queryInfo[int(chosen)  - 1]
 
 	(readStatus, readInfo) = CDDB.read(queryInfo['category'], queryInfo['disc_id'], user = 'anonymous', host = 'localhost', client_name = 'CDDB-py', client_version = '5')
@@ -62,7 +62,7 @@ elif queryStatus is 200 or queryStatus is 210:
 
 print ' DONE.'
 
-print 'Starting to encoding:', artist, '-', album
+print 'Starting encoding:', artist, '-', album
 
 saveDir = baseDir + camelCase(artist) + '/' + camelCase(album) + '/'
 try:
