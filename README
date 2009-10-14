@@ -1,0 +1,12 @@
+System requirements:
+	* python 2.5
+	* cddb-py
+
+Important:
+	Before first change value of two variables in source file:
+	* baseDir - it is path to directory where should be output files shored
+	* encoderPath - it is path to MusePack encoder (mppenc for MusePack v7)
+
+Output files structure:
+	$baseDir/<artist name>/<album/cd name>/<track number>-<track name>.mpc
+	All names are written using camelCase formatting without white characters.
